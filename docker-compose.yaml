@@ -1,0 +1,9 @@
+version: "3"
+services:
+    nlp-100-py:
+        build: ./
+        tty: true
+        stdin_open: true
+        volumes:
+            - "./:/code/"
+        container_name: nlp-100-py
